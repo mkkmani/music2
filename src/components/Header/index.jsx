@@ -31,44 +31,60 @@ const Navbar = () => {
             </button>
           </div>
           {open && (
-            <div className='lg:hidden fixed top-24 pt-5 left-0 right-0 flex flex-col items-center bg-white w-full text-gary-700'>
+            <ul className='lg:hidden fixed top-24 pt-5 left-0 right-0 flex flex-col items-center bg-white w-full text-gary-700'>
+              <li>
               <Link to='/' className='pl-4 flex items-center text-gary-700' onClick={onClickMenu}>
                 <MdHome className='pb-1' style={{ width: '28px', height: '28px' }} />
                 <p>Home</p>
-              </Link>
+                </Link>
+              </li>
+              <li>
               <Link to='/instruments' className='pl-4 flex items-center text-gary-700' onClick={onClickMenu}>
                 <GiGuitarBassHead className='pb-1' style={{ width: '28px', height: '28px' }} />
                 <p>Instruments</p>
-              </Link>
+                </Link>
+              </li>
+              <li>
               <Link to='/videos' className='pl-4 flex items-center text-gary-700' onClick={onClickMenu}>
                 <MdOutlineMusicVideo className='pb-1' style={{ width: '28px', height: '28px' }} />
                 <p>Videos</p>
-              </Link>
-              <button onClick={onClickLogin} className='flex items-center bg-white text-gary-700'>
+                </Link>
+              </li>
+              <li>
+              <Link to='/accounts' className='flex items-center bg-white text-gary-700'>
                 {login ? <IoMdLogOut className='pb-1' style={{ width: '28px', height: '28px' }} /> : <IoMdLogIn className='pb-1' style={{ width: '28px', height: '28px' }} />}
                 {login ? <p>Logout</p> : <p>Login</p>}
-              </button>
-            </div>
+                </Link>
+                </li>
+            </ul>
           )}
 
-          <div className='hidden lg:flex flex-column items-center bg-white text-gary-700'>
+          <ul className='hidden lg:flex flex-column items-center bg-white text-gary-700'>
+            <li>
             <Link to='/' className='flex items-center'>
               <MdHome className='pb-1' style={{ width: '28px', height: '28px' }} />
               <p className='pl-1'>Home</p>
-            </Link>
+              </Link>
+            </li>
+            <li>
             <Link to='/instruments' className='flex items-center pl-4'>
               <GiGuitarBassHead className='pb-1' style={{ width: '28px', height: '28px' }} />
               <p className='pl-1'>Instruments</p>
-            </Link>
+              </Link>
+              </li>
+              <li>
             <Link to='/videos' className='flex items-center pl-4'>
               <MdOutlineMusicVideo className='pb-1' style={{ width: '28px', height: '28px' }} />
               <p className='pl-1'>Videos</p>
-            </Link>
-            <button onClick={onClickLogin} className='flex items-center text-black bg-white'>
+              </Link>
+            </li>
+            <li>
+            <Link to='/accounts' className='flex items-center text-black bg-white'>
               {login ? <IoMdLogOut className='pb-1' style={{ width: '28px', height: '28px' }} /> : <IoMdLogIn className='pb-1' style={{ width: '28px', height: '28px' }} />}
               {login ? <p>Logout</p> : <p>Login</p>}
-            </button>
-          </div>
+              </Link>
+              </li>
+          </ul>
         </div>
       </div>
     </nav>
