@@ -17,7 +17,7 @@ export const AdminLoginForm = () => {
   };
 
   return (
-    <div className="rounded-lg shadow-xl p-8 w-1/3">
+    <div className="rounded-lg shadow-xl p-8">
       <form className="flex flex-col border border-gray-400 rounded-lg p-4" onSubmit={handleSubmit}>
         <h2 className="mb-4 font-medium text-xl">Admin Login</h2>
         <div className="flex flex-col mb-2">
@@ -31,7 +31,7 @@ export const AdminLoginForm = () => {
             name="username"
             value={userDetails.username}
             onChange={handleInputChange}
-            className="bg-white"
+            className="bg-white border border-grey-600 p-1 rounded-md"
           />
         </div>
         <div className="flex flex-col">
@@ -45,7 +45,7 @@ export const AdminLoginForm = () => {
             name="password"
             value={userDetails.password}
             onChange={handleInputChange}
-            className="bg-white"
+            className="bg-white border border-grey-600 p-1 rounded-md"
           />
         </div>
         <button
@@ -76,7 +76,7 @@ export const StudentLoginForm = () => {
   };
 
   return (
-    <div className="rounded-lg shadow-xl p-8 w-1/3">
+    <div className="rounded-lg shadow-xl p-8">
       <form className="flex flex-col border border-gray-400 rounded-lg p-4" onSubmit={handleSubmit}>
         <h2 className="mb-4 font-medium text-xl">Student Login</h2>
         <div className="flex flex-col mb-2">
@@ -90,7 +90,7 @@ export const StudentLoginForm = () => {
             name="username"
             value={userDetails.username}
             onChange={handleInputChange}
-            className="bg-white"
+            className="bg-white border border-grey-600 p-1 rounded-md"
           />
         </div>
         <div className="flex flex-col">
@@ -104,7 +104,7 @@ export const StudentLoginForm = () => {
             name="password"
             value={userDetails.password}
             onChange={handleInputChange}
-            className="bg-white"
+            className="bg-white border border-grey-600 p-1 rounded-md"
           />
         </div>
         <button

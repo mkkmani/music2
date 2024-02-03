@@ -33,9 +33,9 @@ export const AddStudent = () => {
   };
 
   return (
-    <div className="w-full md:w-1/3 rounded-xl shadow-xl bg-white">
+    <div className="w-full lg:w-1/3 rounded-xl shadow-xl bg-white">
       <form className="p-4 border border-gray-500 rounded-xl" onSubmit={handleSubmit}>
-        <h2 className="font-medium text-2xl mb-4">Add Student</h2>
+        <h2 className="font-medium text-xl mb-4">Add Student</h2>
         <div className="mb-4 flex flex-col items-start">
           <label htmlFor="name" className="text-sm">Student name</label>
           <input
@@ -115,7 +115,7 @@ export const AddVideo = () => {
   })
 
   return (
-    <div className="w-full md:w-1/3 rounded-lg shadow-xl bg-white border border-gray-600">
+    <div className="w-full lg:w-1/3 rounded-lg shadow-xl bg-white border border-gray-600">
       <form action="" className="p-4">
         <h2 className="text-xl font-medium mb-2">
           Add video
@@ -143,7 +143,7 @@ export const AddImageToGallery = () => {
   })
 
   return (
-    <div className="w-full md:w-1/3 rounded-lg shadow-xl bg-white border border-gray-600">
+    <div className="w-full lg:w-1/3 rounded-lg shadow-xl bg-white border border-gray-600">
       <form action="" className="p-4">
         <h2 className="text-xl font-medium mb-2">
           Add Image
@@ -171,7 +171,7 @@ export const AddEventImages = () => {
   })
 
   return (
-    <div className="w-full md:w-1/3 rounded-lg shadow-xl bg-white border border-gray-600">
+    <div className="w-full lg:w-1/3 rounded-lg shadow-xl bg-white border border-gray-600">
       <form action="" className="p-4">
         <h2 className="text-xl font-medium mb-2">
           Add event image
